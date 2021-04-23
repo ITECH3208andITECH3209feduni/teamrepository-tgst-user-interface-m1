@@ -1,0 +1,225 @@
+*{
+  margin:0 ;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box; 
+  font-family: 'Poppins';
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+header{
+  background-image: url(../images/banner1.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+header .btns ul li{
+  float:left;
+  position:relative;
+  font-size: xx-large;
+}
+header .btns ul li:hover{
+  
+  padding-right: 15px;
+  transition: .5s;
+}
+header .btns ul li ul{
+  position: absolute;
+  top:68px;
+  right:0px;
+  width:180px;
+  display:none;
+}
+header .btns ul li:hover ul{
+  display:block;
+  background-color: #9b0000;
+  margin-top:0px;
+  box-sizing: border-box;
+  font-size: 25px;
+  top:32px;
+}
+header .btns ul li ul li{
+  width:100%;
+}
+header .btns ul li ul a{
+  padding:10px;
+  background: rgb(161, 157, 157);
+  color: rgb(12, 12, 12);
+}
+header .btns ul li ul a:hover{
+  background:rgb(13, 13, 14);
+  color: rgb(255, 251, 251);
+  padding-left: 5px;
+}
+.comp-name h1 a{
+  color: #dddddd;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width:1200px){
+  .container ul li{
+      width:40%;
+      margin:20px;
+  }
+}
+nav{
+  padding: 0px 15px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) ;
+}
+nav .comp-name{
+  padding: 10px 0px;
+  font-weight: bold;
+}
+nav .comp-name h2 span{
+  color: #9b0000;
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li a{
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+nav ul li a.admin-btn{
+  padding: 10px 25px;
+  background-color: #9b0000;
+  border: 2px solid #fff;
+}
+.inhead-sec{
+  color: #fff;
+  padding: 200px 15px;
+}
+.inhead-sec h2{
+  font-size: 45px;
+  text-align: center;
+  font-family: 'Poppins';
+}
+.inhead-sec p{
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.inhead-sec h2 + p{
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.inhead-sec .mainButton{
+  color: #FF0000;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section.search-tables .table-item {
+  text-align: center;
+  background-color: #eeeeee;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 0px 0px 40px 0px;
+}
+
+section.search-tables .table-item .top-content {
+  background-color: #f7a530;
+  padding: 30px;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  position: center;
+}
+
+section.search-tables .table-item .top-content h4 {
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0px;
+  margin-bottom: 0px;
+}
+
+section.search-tables .table-item .top-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section.search-tables .table-item ul {
+  margin: 40px 0px!important;
+}
+
+section.search-tables .table-item ul li {
+  margin: 25px 0px;
+}
+
+section.search-tables .table-item ul li a {
+  font-size: 14px;
+  font-weight: 600;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+section.search-tables .table-item ul li a:hover {
+  color: #f7a530;
+}
+footer{
+  color: #fff;
+  padding: 40px 15px;
+  background-color: black;
+  position: relative;
+}
+footer .comp{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer .comp h4{
+  font-size: 80px;
+  color: #9b0000;
+  margin:0px;
+}
+footer .comp h4 + p{
+  font-size: 14px;
+  margin-top: -25px;
+}
+footer .comp h4 + p span{
+  color: #9b0000;
+}
+footer .places{
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+footer .places .imgs{
+  flex-basis: 32%;
+}
+footer .places .imgs img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+footer .places .imgs p{
+  text-align: center;
+}
+footer .copyrights{
+  padding: 15px;
+  text-align: center;
+  border-top: 1px solid #fff;
+}
+footer .copyrights p a{
+  color: #9b0000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
