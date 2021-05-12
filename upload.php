@@ -4,8 +4,9 @@ $output = '';
 if(isset($_POST["import"]))
 {
  $extension = end(explode(".", $_FILES["excel"]["name"])); // For getting Extension of selected file
+$file_ext=strtolower($extension);
  $allowed_extension = array("xls", "xlsx", "csv"); //allowed extension
- if(in_array($extension, $allowed_extension)) //check selected file extension is present in allowed extension array
+ if(in_array($file_ext, $allowed_extension)) //check selected file extension is present in allowed extension array
  {
   $file = $_FILES["excel"]["tmp_name"]; // getting temporary source of excel file
   include("PHPExcel/IOFactory.php"); // Add PHPExcel Library in this code
